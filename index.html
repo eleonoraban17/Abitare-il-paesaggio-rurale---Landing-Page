@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abitare il Paesaggio Rurale | Landing Page</title>
+    <style>
+        /* Reset e Font */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #1a1a1a; background: #fff; }
+
+        /* Header */
+        header { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; height: 60px; }
+
+        /* Hero Section */
+        .hero { position: relative; height: 80vh; background: url('https://images.unsplash.com') no-repeat center/cover; display: flex; align-items: center; justify-content: center; color: white; }
+        .hero::after { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.3); }
+        .hero-content { position: relative; z-index: 1; text-align: center; }
+        .hero h1 { font-size: 4rem; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 10px; }
+
+        /* Progetto & Descrizione */
+        .container { max-width: 1200px; margin: 80px auto; padding: 0 5%; }
+        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .project-image img { width: 100%; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .project-text h2 { font-size: 2.5rem; margin-bottom: 20px; color: #333; }
+        .project-text p { font-size: 1.1rem; color: #666; margin-bottom: 20px; }
+
+        /* Nuova Sezione Contatti */
+        .contacts {background:#e9efe9; text-align:left; padding:60px 20px;}
+        .contact-item h2 {font-size: 1.4rem; color: #333; text-align: left;}
+        .contact-item h3 {font-size: 1.2rem; color: #666; text-align: left;}
+        .contact-item p {font-size: 1rem; text-align: left;}
+        .contact-item a {color: var(--primary); text-decoration: none; text-align: left;}
+        .contact-item a:hover {text-align: left;}
+
+        /* Sponsor Section */
+        .sponsor-section { background: #f9f9f9; padding: 80px 5%; border-top: 1px solid #eee; text-align: center; }
+        .sponsor-grid { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 40px; margin-bottom: 60px; }
+        .sponsor-logo { width: 160px; height: auto; opacity: 0.7; transition: 0.3s; }
+        .sponsor-logo:hover { filter: grayscale(0%); opacity: 1; }
+
+        /* Footer / Dicitura Obbligatoria */
+        footer { padding: 40px 5%; border-top: 2px solid #333; text-align: center; background: #fff; }
+        .legal-notice { font-size: 1rem; font-weight: 600; color: #444; max-width: 800px; margin: 0 auto; line-height: 1.4; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .project-grid { grid-template-columns: 1fr; }
+            .sponsor-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <div class="logo-icon"></div>
+            <span><img src="images/logo.png" alt="Logo Abitare il Paesaggio" class="logo"></span>
+        </div>
+        <nav>Il Progetto</nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Abitare il paesaggio rurale</h1>
+            <p>Pedagno Nuovo</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="project-grid">
+            <div class="project-image">
+                <!-- Immagine di esempio progetto -->
+                <img src="images/fienile.jpg" alt="Fienile">
+            </div>
+            <div class="project-text">
+                <h2>Il Progetto</h2>
+                <p>Si propone il recupero delle spazialità storiche esistenti, limitando l'intervento all'apertura delle bucature che assecondano le esigenze della nuova funzione ospitata.</p>
+                <p>Le nuove aperture si inseriscono nell'impaginato dell'edificio esistente mantenendo allineamenti e proporzioni delle bucature già presenti.</p>
+                <p>All'interno il progetto organizza lo spazio con una zona a doppia altezza per rispettare la volumetria preesistente del fienile e un supporto che vi si affaccia mantenendo tetto e capriate a vista.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-box">
+            <div class="contact-item">
+                <h2 style="margin-left: 55px">Contatti</h2>
+                <h3 style="margin-left: 55px">Per informazioni, programmazione e prenotazione visite</h3>
+                <br>
+            </div>
+            <div class="contact-item">
+                <p style="margin-left: 55px">T. <a href="tel:+393294913702">+39 366.8995293</a></p>
+                <br>
+                <p style="margin-left: 55px">E. <a href="mailto:info@abitareilpaesaggio.it"> info@abitareilpaesaggio.it</a></p>
+                <br>
+                <p style="margin-left: 55px">Strada Mulattiera 21<br>43044 Collecchio, Parma <br>Loc. Pedagno Nuovo</p>
+            </div>
+        </div>
+
+    <section class="sponsor-section">
+        <div class="sponsor-grid">
+            <!-- Sostituire con URL dei loghi reali -->
+            <img src="images/FUE.jpg" alt="Logo Sponsor 1" class="sponsor-logo">
+            <img src="images/MIC.png" alt="Logo Sponsor 2" class="sponsor-logo">
+            <img src="images/Italia.jpg" alt="Logo Sponsor 3" class="sponsor-logo">
+            <img src="images/REG.jpg" alt="Logo Sponsor 4" class="sponsor-logo">
+        </div>
+
+        <footer>
+            <p class="legal-notice">
+                 PNRR, M1C3 - Investimento 2.2 finanziato dall’Unione Europea – Next Generation EU 
+            </p>
+        </footer>
+    </section>
+
+</body>
+</html>
